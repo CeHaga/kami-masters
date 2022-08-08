@@ -6,48 +6,65 @@ public abstract class Fighter : MonoBehaviour
 {
     public BattleManager battleManager;
     [SerializeField] protected Shapes shape;
+    [SerializeField] private int maxHP;
+    private int hp;
 
-    public abstract Actions attack();
+    public abstract ActionDescription attack();
 
-    protected Actions chooseAttack(int choice)
+    protected ActionDescription chooseAttack(int choice)
     {
+        ActionDescription action;
         switch (shape)
         {
-            case Shapes.SHAPE1:
+            case Shapes.TSURU:
                 switch (choice)
                 {
                     case 1:
-                        return Actions.SHAPE1_ACTION1;
+                        action = new ActionDescription(
+                            Actions.TSURU_ACTION1,
+                            "Ação 1 do Tsuru",
+                            new Lanes[] {Lanes.MID},
+                            new Lanes[] {Lanes.MID}
+                        );
+                        return action;
                     case 2:
-                        return Actions.SHAPE1_ACTION2;
-                    case 3:
-                        return Actions.SHAPE1_ACTION3;
+                        action = new ActionDescription(
+                            Actions.TSURU_ACTION2,
+                            "Ação 2 do Tsuru",
+                            new Lanes[] {},
+                            new Lanes[] {Lanes.TOP}
+                        );
+                        return action;
                 }
                 break;
-            case Shapes.SHAPE2:
+            case Shapes.KARP:
                 switch (choice)
                 {
                     case 1:
-                        return Actions.SHAPE2_ACTION1;
+                        action = new ActionDescription(
+                            Actions.KARP_ACTION1,
+                            "Ação 1 da Carpa",
+                            new Lanes[] {Lanes.MID},
+                            new Lanes[] {Lanes.MID}
+                        );
+                        return action;
                     case 2:
-                        return Actions.SHAPE2_ACTION2;
-                    case 3:
-                        return Actions.SHAPE2_ACTION3;
-                }
-                break;
-            case Shapes.SHAPE3:
-                switch (choice)
-                {
-                    case 1:
-                        return Actions.SHAPE3_ACTION1;
-                    case 2:
-                        return Actions.SHAPE3_ACTION2;
-                    case 3:
-                        return Actions.SHAPE3_ACTION3;
+                        action = new ActionDescription(
+                            Actions.KARP_ACTION2,
+                            "Ação 2 da Carpa",
+                            new Lanes[] {Lanes.BOTTOM, Lanes.TOP},
+                            new Lanes[] {Lanes.MID}
+                        );
+                        return action;
                 }
                 break;
         }
         // Never happens, just to return sth
-        return Actions.SHAPE1_ACTION1;
+        return null;
+    }
+
+    public bool onHit(int dmg){
+        hp -= dmg;
+        return hp <= 0;
     }
 }

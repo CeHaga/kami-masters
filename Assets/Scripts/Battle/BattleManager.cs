@@ -10,8 +10,8 @@ public class BattleManager : MonoBehaviour
 
     private int playerChoice;
 
-    private Actions playerAction;
-    private Actions enemyAction;
+    private ActionDescription playerAction;
+    private ActionDescription enemyAction;
 
     private void Start()
     {
@@ -29,9 +29,28 @@ public class BattleManager : MonoBehaviour
         playerChoice = choice;
         playerAction = playerFighter.attack();
 
-        Debug.Log("Player used " + playerAction.ToString() + " and Enemy used " + enemyAction.ToString());
+        Debug.Log("Player used " + playerAction.name + " and Enemy used " + enemyAction.name);
+        
+        // Player attack
+        if(checkAttack(playerAction.laneAttack, enemyAction.lanePosition)){
+
+        }
+
+        // Enemy attack
+        if(checkAttack(enemyAction.laneAttack, playerAction.lanePosition)){
+
+        }
 
         enemyAction = enemyFighter.attack();
         gameManager.enemyAttack(enemyAction);
+    }
+
+    private bool checkAttack(Lanes[] laneAttack, Lanes[] lanePosition){
+        foreach (Lanes lane in laneAttack)
+        {
+            if(Array.Exists(lanePosition, element => element == lane)) return true;
+        }
+
+        return false;
     }
 }

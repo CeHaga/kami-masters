@@ -19,15 +19,15 @@ public class GameManager : MonoBehaviour
         battleManager.playerAttack(choice);
     }
 
-    public void enemyAttack(Actions enemyAction)
+    public void enemyAttack(ActionDescription enemyAction)
     {
         /* Gambiarra pra mostrar a cor */
         Color32 color = new Color32(255, 0, 255, 255);
-        if ((int)enemyAction % 3 == 0)
+        if ((int)enemyAction.action % 3 == 0)
         {
             color.b = 0;
         }
-        if ((int)enemyAction % 3 == 2)
+        if ((int)enemyAction.action % 3 == 2)
         {
             color.r = 0;
         }
