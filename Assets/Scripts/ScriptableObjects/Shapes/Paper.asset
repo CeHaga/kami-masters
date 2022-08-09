@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b44971633e227e549bf2551e7a2d97a5, type: 3}
-  m_Name: KarpAction1
+  m_Script: {fileID: 11500000, guid: e6a4ede5b9595164bb4407abc8ea8f58, type: 3}
+  m_Name: Paper
   m_EditorClassIdentifier: 
-  name: Bubble
-  laneAttack: 01000000
-  lanePosition: 01000000
-  hpHeal: 0
-  shapeChange: {fileID: 0}
+  name: Kami
+  maxHP: 3
+  actions: []

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b44971633e227e549bf2551e7a2d97a5, type: 3}
-  m_Name: KarpAction1
+  m_Name: ShapeChangeFrog
   m_EditorClassIdentifier: 
-  name: Bubble
-  laneAttack: 01000000
-  lanePosition: 01000000
+  name: Kaeru Change
+  laneAttack: 
+  lanePosition: 00000000
   hpHeal: 0
-  shapeChange: {fileID: 0}
+  shapeChange: {fileID: 11400000, guid: b1ded3f7a2cbcae409d4cd5018589d66, type: 2}

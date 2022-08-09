@@ -15,3 +15,5 @@ MonoBehaviour:
   name: Air Slash
   laneAttack: 01000000
   lanePosition: 01000000
+  hpHeal: 0
+  shapeChange: {fileID: 0}

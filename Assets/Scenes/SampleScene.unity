@@ -616,7 +616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.62, y: -26.9}
+  m_AnchoredPosition: {x: 146, y: -10.200003}
   m_SizeDelta: {x: 54.3054, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &605402848
@@ -665,7 +665,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1614568757}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Attack1Press
+        m_MethodName: ChangeTsuruPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -688,7 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5348434, g: 0.5712894, b: 0.9528302, a: 1}
+  m_Color: {r: 0, g: 0.093458176, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -930,6 +930,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 1891708483}
+  shapes:
+    paper: {fileID: 11400000, guid: 333e985846bf97845b8de094382c22f6, type: 2}
+    shapeChangePaper: {fileID: 0}
+    tsuru: {fileID: 11400000, guid: a7c6632514591fd4fbb865a33ef13c3b, type: 2}
+    shapeChangeTsuru: {fileID: 11400000, guid: 9f3f8e4f6caf75e47be7e7eda1d0dc78, type: 2}
+    cat: {fileID: 11400000, guid: 68daca769f71cda43a19f8d068d0b49c, type: 2}
+    shapeChangeCat: {fileID: 11400000, guid: 0acadf251448fc84f9548fdbb97abcd2, type: 2}
+    frog: {fileID: 11400000, guid: b1ded3f7a2cbcae409d4cd5018589d66, type: 2}
+    shapeChangeFrog: {fileID: 11400000, guid: 0eecab5d4fbcce447922017933c8e82b, type: 2}
+    karp: {fileID: 11400000, guid: 8d8bd80b69181e940ab6d8e31c838360, type: 2}
+    shapeChangeKarp: {fileID: 0}
+  actionsBtn:
+  - {fileID: 1643433592}
+  - {fileID: 1577379456}
+  actionDisplay: {fileID: 1823587304}
 --- !u!4 &1169875362
 Transform:
   m_ObjectHideFlags: 0
@@ -980,7 +995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.62, y: -62.3}
+  m_AnchoredPosition: {x: 146, y: -45.600002}
   m_SizeDelta: {x: 54.305, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1321269428
@@ -1029,7 +1044,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1614568757}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Attack2Press
+        m_MethodName: ChangeCatPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1052,7 +1067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  m_Color: {r: 0.451811, g: 0, b: 0.745283, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1324,7 +1339,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1614568757}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Attack3Press
+        m_MethodName: Attack2Press
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1501,7 +1516,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1614568757}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Attack3Press
+        m_MethodName: Attack1Press
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1765,7 +1780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.62, y: -95.7}
+  m_AnchoredPosition: {x: 146, y: -79}
   m_SizeDelta: {x: 54.306, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923055139
@@ -1814,7 +1829,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1614568757}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Attack3Press
+        m_MethodName: ChangeFrogPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

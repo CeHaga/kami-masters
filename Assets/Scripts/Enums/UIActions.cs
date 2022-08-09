@@ -1,0 +1,8 @@
+public enum UIActions
+{
+    SHAPECHANGE_TSURU,
+    SHAPECHANGE_CAT,
+    SHAPECHANGE_FROG,
+    ATTACK1,
+    ATTACK2
+}

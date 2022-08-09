@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a4ede5b9595164bb4407abc8ea8f58, type: 3}
   m_Name: Frog
   m_EditorClassIdentifier: 
-  name: 
-  action1: {fileID: 0}
-  action2: {fileID: 0}
+  name: Kaeru
+  maxHP: 3
+  actions:
+  - {fileID: 11400000, guid: 3ed28897a2b04cf47a48ce53606eb8cf, type: 2}
+  - {fileID: 11400000, guid: df76bf8e8a1a7214996ac4b56f5fb1df, type: 2}

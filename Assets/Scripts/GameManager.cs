@@ -6,48 +6,82 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Managers")]
     public BattleManager battleManager;
+    
+    [Header("Scriptable Objects")]
+    public Shapes shapes;
 
-    /*
-    public GameObject action1Btn;
-    public GameObject action2Btn;
-
-    private GameObject action1Text;
-    private GameObject action2Text;
+    [Header("Actions in Battle")]
+    public Transform[] actionsBtn;
+    private Action[] actions;
+    private Text[] actionsText;
 
     public TextMeshProUGUI actionDisplay;
-    */
-    private Actions playerChoice;
+    
+    private Action playerChoice;
 
-    private void Awake() {
-        playerChoice = 0;
-    }
-
-    private void Start() {
-        //action1Text = action1Btn.GetChild(0);
-        //action2Text = action2Btn.GetChild(0);
-    }
-
-    public void PlayerAttack(Actions choice)
+    private void Awake()
     {
-        battleManager.PlayerAttack(choice);
+        playerChoice = null;
     }
 
-    public void EnemyAttack(ActionDescription enemyAction)
+    private void Start()
     {
-        //actionDisplay.text = enemyAction.name;
+        actionsText = new Text[actionsBtn.Length];
+        actions = new Action[actionsBtn.Length];
+        for(int i = 0; i < actionsBtn.Length; i++)
+        {
+            actionsText[i] = actionsBtn[i].GetComponentInChildren<Text>();
+            actionsBtn[i].gameObject.SetActive(false);
+        }
     }
 
-    public void PlayerButtonPressed(Actions choice){
-        playerChoice = choice;
+    public void EnemyAttack(Action enemyAction)
+    {
+        actionDisplay.text = "Enemy will use " + enemyAction.name;
     }
 
-    public void ConfirmPlayerChoice(){
-        if(playerChoice == 0) return;
-        PlayerAttack(playerChoice);
+    public void PlayerButtonPressed(UIActions choice)
+    {
+        switch (choice)
+        {
+            case UIActions.SHAPECHANGE_TSURU:
+                playerChoice = shapes.shapeChangeTsuru;
+                break;
+            case UIActions.SHAPECHANGE_CAT:
+                playerChoice = shapes.shapeChangeCat;
+                break;
+            case UIActions.SHAPECHANGE_FROG:
+                playerChoice = shapes.shapeChangeFrog;
+                break;
+            case UIActions.ATTACK1:
+                playerChoice = actions[0];
+                break;
+            case UIActions.ATTACK2:
+                playerChoice = actions[1];
+                break;
+            default:
+                playerChoice = null;
+                break;
+        }
+    }
 
-        //action1Text.text = 
+    public void ConfirmPlayerChoice()
+    {
+        if(playerChoice == null) return;
+        BattleStatus battleStatus = battleManager.PlayerAttack(playerChoice);
 
-        playerChoice = 0;
+        if(battleStatus == null) return;
+
+        Debug.Log(battleStatus);
+
+        for(int i = 0; i < actionsBtn.Length; i++){
+            actionsBtn[i].gameObject.SetActive(true);
+            actions[i] = battleManager.GetPlayerShape().actions[i];
+            actionsText[i].text = actions[i].name;
+        }
+
+        playerChoice = null;
     }
 }
