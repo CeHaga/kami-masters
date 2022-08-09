@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnemyFighter : Fighter
 {
-    public override ActionDescription attack()
+    public override ActionDescription Attack()
     {
-        int choice = Random.Range(1, 4);
-        return chooseAttack(choice);
+        int offset = Random.Range(0, 2);
+        Actions choice = ActionFromChoiceOffset(offset);
+        return ChooseAttack(choice);
     }
 }

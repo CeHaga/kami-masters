@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,44 +9,50 @@ public class BattleManager : MonoBehaviour
     public PlayerFighter playerFighter;
     public EnemyFighter enemyFighter;
 
-    private int playerChoice;
+    private Actions playerChoice;
 
     private ActionDescription playerAction;
     private ActionDescription enemyAction;
 
     private void Start()
     {
-        enemyAction = enemyFighter.attack();
-        gameManager.enemyAttack(enemyAction);
+        enemyFighter.Create(Shapes.KARP);
+        enemyAction = enemyFighter.Attack();
+        gameManager.EnemyAttack(enemyAction);
     }
 
-    public int getPlayerChoice()
+    public Actions GetPlayerChoice()
     {
         return playerChoice;
     }
 
-    public void playerAttack(int choice)
+    public void PlayerAttack(Actions action)
     {
-        playerChoice = choice;
-        playerAction = playerFighter.attack();
+        playerChoice = action;
+        playerAction = playerFighter.Attack();
+
+        if(playerAction == null){
+            Debug.Log("Invalid action");
+            return;
+        }
 
         Debug.Log("Player used " + playerAction.name + " and Enemy used " + enemyAction.name);
         
         // Player attack
-        if(checkAttack(playerAction.laneAttack, enemyAction.lanePosition)){
-
+        if(CheckAttack(playerAction.laneAttack, enemyAction.lanePosition)){
+            enemyFighter.OnHit(1);
         }
 
         // Enemy attack
-        if(checkAttack(enemyAction.laneAttack, playerAction.lanePosition)){
-
+        if(CheckAttack(enemyAction.laneAttack, playerAction.lanePosition)){
+            playerFighter.OnHit(1);
         }
 
-        enemyAction = enemyFighter.attack();
-        gameManager.enemyAttack(enemyAction);
+        enemyAction = enemyFighter.Attack();
+        gameManager.EnemyAttack(enemyAction);
     }
 
-    private bool checkAttack(Lanes[] laneAttack, Lanes[] lanePosition){
+    private bool CheckAttack(Lanes[] laneAttack, Lanes[] lanePosition){
         foreach (Lanes lane in laneAttack)
         {
             if(Array.Exists(lanePosition, element => element == lane)) return true;

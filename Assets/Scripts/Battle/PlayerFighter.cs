@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerFighter : Fighter
 {
-    public override ActionDescription attack()
+    public override ActionDescription Attack()
     {
-        int choice = battleManager.getPlayerChoice();
-        return chooseAttack(choice);
+        Actions choice = battleManager.GetPlayerChoice();
+        return ChooseAttack(choice);
     }
 }

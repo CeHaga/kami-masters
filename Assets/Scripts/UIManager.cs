@@ -5,23 +5,24 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public GameManager gameManager;
-    public void attack1Press()
+    
+    public void Attack1Press()
     {
-        gameManager.playerButtonPressed(1);
+        gameManager.PlayerButtonPressed(Actions.SHAPECHANGE_TSURU);
     }
 
-    public void attack2Press()
+    public void Attack2Press()
     {
-        gameManager.playerButtonPressed(2);
+        gameManager.PlayerButtonPressed(Actions.SHAPECHANGE_CAT);
     }
 
-    public void attack3Press()
+    public void Attack3Press()
     {
-        gameManager.playerButtonPressed(3);
+        gameManager.PlayerButtonPressed(Actions.SHAPECHANGE_FROG);
     }
 
-    public void confirmPlayerChoice()
+    public void ConfirmPlayerChoice()
     {
-        gameManager.confirmPlayerChoice();
+        gameManager.ConfirmPlayerChoice();
     }
 }

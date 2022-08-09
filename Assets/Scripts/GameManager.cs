@@ -2,46 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public BattleManager battleManager;
-    public Image panelImg;
-    
-    private int playerChoice;
+
+    /*
+    public GameObject action1Btn;
+    public GameObject action2Btn;
+
+    private GameObject action1Text;
+    private GameObject action2Text;
+
+    public TextMeshProUGUI actionDisplay;
+    */
+    private Actions playerChoice;
 
     private void Awake() {
         playerChoice = 0;
     }
 
-    public void playerAttack(int choice)
-    {
-        battleManager.playerAttack(choice);
+    private void Start() {
+        //action1Text = action1Btn.GetChild(0);
+        //action2Text = action2Btn.GetChild(0);
     }
 
-    public void enemyAttack(ActionDescription enemyAction)
+    public void PlayerAttack(Actions choice)
     {
-        /* Gambiarra pra mostrar a cor */
-        Color32 color = new Color32(255, 0, 255, 255);
-        if ((int)enemyAction.action % 3 == 0)
-        {
-            color.b = 0;
-        }
-        if ((int)enemyAction.action % 3 == 2)
-        {
-            color.r = 0;
-        }
-
-        panelImg.color = color;
+        battleManager.PlayerAttack(choice);
     }
 
-    public void playerButtonPressed(int choice){
+    public void EnemyAttack(ActionDescription enemyAction)
+    {
+        //actionDisplay.text = enemyAction.name;
+    }
+
+    public void PlayerButtonPressed(Actions choice){
         playerChoice = choice;
     }
 
-    public void confirmPlayerChoice(){
+    public void ConfirmPlayerChoice(){
         if(playerChoice == 0) return;
-        playerAttack(playerChoice);
+        PlayerAttack(playerChoice);
+
+        //action1Text.text = 
+
         playerChoice = 0;
     }
 }
