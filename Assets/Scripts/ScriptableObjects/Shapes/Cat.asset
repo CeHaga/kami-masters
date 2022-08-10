@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a4ede5b9595164bb4407abc8ea8f58, type: 3}
   m_Name: Cat
   m_EditorClassIdentifier: 
-  name: 
-  action1: {fileID: 0}
-  action2: {fileID: 0}
+  name: Neko
+  maxHP: 3
+  actions:
+  - {fileID: 11400000, guid: 0b2ddfa396cb2264fb7c32d3d4cb036b, type: 2}
+  - {fileID: 11400000, guid: 18bb67ea9b777ec49a62f2db62a16360, type: 2}

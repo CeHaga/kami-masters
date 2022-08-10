@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Shape", menuName = "Shape")]
 public class Shape : ScriptableObject
 {
     public new string name;
+
+    public int maxHP;
     
-    public Action action1;
-    public Action action2;
+    public Action[] actions;
 }

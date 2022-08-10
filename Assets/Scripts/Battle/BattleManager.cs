@@ -9,47 +9,67 @@ public class BattleManager : MonoBehaviour
     public PlayerFighter playerFighter;
     public EnemyFighter enemyFighter;
 
-    private Actions playerChoice;
+    private Action playerChoice;
 
-    private ActionDescription playerAction;
-    private ActionDescription enemyAction;
+    private Action playerAction;
+    private Action enemyAction;
 
     private void Start()
     {
-        enemyFighter.Create(Shapes.KARP);
+        enemyFighter.Create(gameManager.shapes.karp);
         enemyAction = enemyFighter.Attack();
         gameManager.EnemyAttack(enemyAction);
+
+        playerFighter.Create(gameManager.shapes.paper);
     }
 
-    public Actions GetPlayerChoice()
+    public Action GetPlayerChoice()
     {
         return playerChoice;
     }
 
-    public void PlayerAttack(Actions action)
+    public BattleStatus PlayerAttack(Action action)
     {
         playerChoice = action;
+
         playerAction = playerFighter.Attack();
+        if(!playerAction) return null;
 
-        if(playerAction == null){
-            Debug.Log("Invalid action");
-            return;
-        }
-
-        Debug.Log("Player used " + playerAction.name + " and Enemy used " + enemyAction.name);
+        BattleStatus battleStatus = new BattleStatus();        
+        
+        battleStatus.playerDead = false;
+        battleStatus.enemyDead = false;
+        battleStatus.playerHit = false;
+        battleStatus.enemyHit = false;
+        
+        battleStatus.playerHeal = playerAction.hpHeal > 0;
+        battleStatus.enemyHeal = playerAction.hpHeal > 0;
         
         // Player attack
         if(CheckAttack(playerAction.laneAttack, enemyAction.lanePosition)){
-            enemyFighter.OnHit(1);
+            battleStatus.enemyHit = true;
+            battleStatus.enemyDead = enemyFighter.OnHit(1);
         }
 
         // Enemy attack
         if(CheckAttack(enemyAction.laneAttack, playerAction.lanePosition)){
-            playerFighter.OnHit(1);
+            battleStatus.playerHit = true;
+            battleStatus.playerDead = playerFighter.OnHit(1);
         }
+        
+        battleStatus.playerShape = playerFighter.GetShape();
+        battleStatus.playerMaxHP = playerFighter.GetMaxHP();
+        battleStatus.playerHP = playerFighter.GetHP();
+        battleStatus.playerAction = playerAction;
+        battleStatus.enemyShape = enemyFighter.GetShape();
+        battleStatus.enemyMaxHP = enemyFighter.GetMaxHP();
+        battleStatus.enemyHP = enemyFighter.GetHP();
+        battleStatus.enemyAction = enemyAction;
 
         enemyAction = enemyFighter.Attack();
         gameManager.EnemyAttack(enemyAction);
+
+        return battleStatus;
     }
 
     private bool CheckAttack(Lanes[] laneAttack, Lanes[] lanePosition){
@@ -59,5 +79,9 @@ public class BattleManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    public Shape GetPlayerShape(){
+        return playerFighter.GetShape();
     }
 }

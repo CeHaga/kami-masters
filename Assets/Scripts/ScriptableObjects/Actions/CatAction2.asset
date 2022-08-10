@@ -16,3 +16,4 @@ MonoBehaviour:
   laneAttack: 
   lanePosition: 0000000001000000
   hpHeal: 1
+  shapeChange: {fileID: 0}

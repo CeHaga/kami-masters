@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Tsuru
   m_EditorClassIdentifier: 
   name: Tsuru
-  action1: {fileID: 11400000, guid: 4ed144a65056b464683ff548daebc70b, type: 2}
-  action2: {fileID: 11400000, guid: c512dbfe6ed3dad47823ed5eb9f2caeb, type: 2}
+  maxHP: 3
+  actions:
+  - {fileID: 11400000, guid: 4ed144a65056b464683ff548daebc70b, type: 2}
+  - {fileID: 11400000, guid: c512dbfe6ed3dad47823ed5eb9f2caeb, type: 2}

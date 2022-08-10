@@ -15,3 +15,5 @@ MonoBehaviour:
   name: Fly
   laneAttack: 
   lanePosition: 02000000
+  hpHeal: 0
+  shapeChange: {fileID: 0}

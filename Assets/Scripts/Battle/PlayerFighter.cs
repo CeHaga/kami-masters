@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerFighter : Fighter
 {
-    public override ActionDescription Attack()
+    public override Action Attack()
     {
-        Actions choice = battleManager.GetPlayerChoice();
-        return ChooseAttack(choice);
+        Action choice = battleManager.GetPlayerChoice();
+        bool validAttack = UseAttack(choice);
+
+        if(!validAttack) return null;
+        return choice;
     }
 }
