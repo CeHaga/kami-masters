@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BearAction1
   m_EditorClassIdentifier: 
   name: 
-  description: 'urso habilidade 1: O INIMIGO VAI ATACAR EM BAIXO'
+  description: O INIMIGO VAI ATACAR EM BAIXO
   lanesAttack: 00000000
   lanesPosition: 0000000001000000
   lanesHitbox: 0000000001000000

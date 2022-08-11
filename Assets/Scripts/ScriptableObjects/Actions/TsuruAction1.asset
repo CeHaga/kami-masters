@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TsuruAction1
   m_EditorClassIdentifier: 
   name: Air Slash
+  description: 
   lanesAttack: 01000000
   lanesPosition: 01000000
   lanesHitbox: 01000000
@@ -20,4 +21,4 @@ MonoBehaviour:
   returnAfter: 0
   shapeChange: {fileID: 0}
   animation: {fileID: 7400000, guid: 1bf448318ecab7947abcfa3df1a3017c, type: 2}
-  buttonSprite: {fileID: 7989248184008358441, guid: 47efa18e5e9ee674bbe8c4b28bf94c25, type: 3}
+  buttonSprite: {fileID: 3184812864784502587, guid: 47efa18e5e9ee674bbe8c4b28bf94c25, type: 3}

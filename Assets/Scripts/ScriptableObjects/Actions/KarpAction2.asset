@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KarpAction2
   m_EditorClassIdentifier: 
   name: Water Jet
-  description: 'carpa habilidade 2: O INIMIGO VAI ATACAR EM BAIXO E CIMA'
+  description: O INIMIGO VAI ATACAR EM BAIXO E CIMA
   lanesAttack: 0000000002000000
   lanesPosition: 01000000
   lanesHitbox: 01000000

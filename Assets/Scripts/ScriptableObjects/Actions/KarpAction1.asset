@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KarpAction1
   m_EditorClassIdentifier: 
   name: Bubble
-  description: 'carpa habilidade 1: O INIMIGO VAI ATACAR EM MEIO'
+  description: O INIMIGO VAI ATACAR EM MEIO
   lanesAttack: 01000000
   lanesPosition: 01000000
   lanesHitbox: 01000000

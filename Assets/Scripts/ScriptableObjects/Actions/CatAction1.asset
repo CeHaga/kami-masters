@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CatAction1
   m_EditorClassIdentifier: 
   name: Scratch
+  description: 
   lanesAttack: 0000000001000000
   lanesPosition: 0000000001000000
   lanesHitbox: 0000000001000000
@@ -20,4 +21,4 @@ MonoBehaviour:
   returnAfter: 0
   shapeChange: {fileID: 0}
   animation: {fileID: 7400000, guid: 7ed6764abcec9664cb219cc52066e49b, type: 2}
-  buttonSprite: {fileID: 9081857935571746852, guid: 9e9cf2b3f59791440a98b35181d00fd4, type: 3}
+  buttonSprite: {fileID: -4907272853570934515, guid: 9e9cf2b3f59791440a98b35181d00fd4, type: 3}

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -19,9 +19,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject[] placeSigns;
 
     [Header("Texts")]
-    [SerializeField] private TextMeshProUGUI actionDisplay;
+    [SerializeField] private Text actionDisplay;
     [SerializeField] private GameObject cooldownContainer;
-    [SerializeField] private TextMeshProUGUI cooldownDisplay;
+    [SerializeField] private Text cooldownDisplay;
 
     private void Awake()
     {
