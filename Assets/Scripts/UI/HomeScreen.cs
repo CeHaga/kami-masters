@@ -17,11 +17,6 @@ public class HomeScreen : MonoBehaviour
     public Button confirmOptionsGame;
     public Button cancelOptionsGame;
     public Button exitOptionsGame;
-
-    [Header("First Battle")]
-    public Shape firstPlayerInitialShape;
-    public Shape firstEnemyInitialShape;
-
     private void Awake(){
         confirmOptionsGame.onClick.AddListener(delegate{optionsGame(true);});
         cancelOptionsGame.onClick.AddListener(delegate{optionsGame(false);});
@@ -34,10 +29,7 @@ public class HomeScreen : MonoBehaviour
 
     //Start Button Function
     public void startMenu(){
-        BattleInformation.playerInitialShape = firstPlayerInitialShape;
-        BattleInformation.enemyInitialShape = firstEnemyInitialShape;
-
-        SceneManager.LoadScene("Battle");
+        SceneManager.LoadScene("ChoosePhase");
     }
 
     //Options Button Function

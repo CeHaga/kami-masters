@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Shape playerInitialShape;
     [SerializeField] private Shape enemyInitialShape;
 
+    [Header("PopUps")]
+    [SerializeField] private GameObject victory;
+    [SerializeField] private GameObject defeat;
+
     private void Awake()
     {
         playerChoice = null;
@@ -95,6 +99,13 @@ public class GameManager : MonoBehaviour
             actionsBtnImage[i].sprite = actions[i].buttonSprite;
         }
 
+        if(battleStatus.playerDead){
+            defeat.gameObject.SetActive(true);
+        }
+
+        if(!battleStatus.playerDead && battleStatus.enemyDead){
+            victory.gameObject.SetActive(true);
+        }
         playerChoice = null;
     }
 }
