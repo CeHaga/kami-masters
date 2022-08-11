@@ -17,6 +17,7 @@ public class HomeScreen : MonoBehaviour
     public Button confirmOptionsGame;
     public Button cancelOptionsGame;
     public Button exitOptionsGame;
+    
     private void Awake(){
         confirmOptionsGame.onClick.AddListener(delegate{optionsGame(true);});
         cancelOptionsGame.onClick.AddListener(delegate{optionsGame(false);});

@@ -4,7 +4,23 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Managers")]
     public GameManager gameManager;
+
+    [Header("Hearts")]
+    [SerializeField] private SpriteRenderer[] playerHearts;
+    [SerializeField] private SpriteRenderer[] enemyHearts;
+    [SerializeField] private Sprite fullHeart;
+    [SerializeField] private Sprite emptyHeart;
+    
+    [Header("Signs")]
+    [SerializeField] private GameObject[] warningSigns;
+    [SerializeField] private GameObject[] placeSigns;
+
+    private void Awake()
+    {
+        ResetSigns();    
+    }
     
     public void ChangeTsuruPress()
     {
@@ -34,5 +50,41 @@ public class UIManager : MonoBehaviour
     public void ConfirmPlayerChoice()
     {
         gameManager.ConfirmPlayerChoice();
+    }
+
+    public void UpdateUI(BattleStatus battleStatus){
+        SetHealth(playerHearts, battleStatus.playerHP);
+        SetHealth(enemyHearts, battleStatus.enemyHP);
+    }
+
+    private void SetHealth(SpriteRenderer[] hearts, int hp){
+        Debug.Log(hp);
+        for(int i = 0; i < hp; i++){
+            hearts[i].sprite = fullHeart;
+        }
+        for(int i = hp; i < hearts.Length; i++){
+            hearts[i].sprite = emptyHeart;
+        }
+    }
+
+    public void SetSigns(Action enemyAction){
+        ResetSigns();
+
+        foreach(Lanes lane in enemyAction.lanesAttack){
+            warningSigns[(int)lane].SetActive(true);
+        }
+        
+        foreach(Lanes lane in enemyAction.lanesHitbox){
+            placeSigns[(int)lane].SetActive(true);
+        }
+    }
+
+    private void ResetSigns(){
+        foreach(GameObject sign in warningSigns){
+            sign.SetActive(false);
+        }
+        foreach(GameObject sign in placeSigns){
+            sign.SetActive(false);
+        }
     }
 }

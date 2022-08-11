@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b44971633e227e549bf2551e7a2d97a5, type: 3}
-  m_Name: FrogAction2
+  m_Name: BearAction1
   m_EditorClassIdentifier: 
-  name: Jump
-  lanesAttack: 
-  lanesPosition: 01000000
-  lanesHitbox: 01000000
+  name: 
+  lanesAttack: 00000000
+  lanesPosition: 0000000001000000
+  lanesHitbox: 0000000001000000
   hpHeal: 0
-  returnAfter: 1
+  returnAfter: 0
   shapeChange: {fileID: 0}
-  animation: {fileID: 7400000, guid: fc33bfb5993202d43830e772b55334ff, type: 2}
-  buttonSprite: {fileID: -8842844316680655686, guid: 55186e9a180e4ad44adaf06694b1c890, type: 3}
+  animation: {fileID: 7400000, guid: b79f16a5545f8cb42981ac13970fc627, type: 2}
+  buttonSprite: {fileID: 0}

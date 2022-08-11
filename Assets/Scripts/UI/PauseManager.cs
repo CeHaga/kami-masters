@@ -23,10 +23,11 @@ public class PauseManager : MonoBehaviour
 
     public void Resume(){
         pauseGamePopUp.gameObject.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
     }
 
     public void Restart(){
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -36,6 +37,7 @@ public class PauseManager : MonoBehaviour
     }
 
     public void Home(){
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Home");
     }
 

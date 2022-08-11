@@ -45,13 +45,13 @@ public class BattleManager : MonoBehaviour
         battleStatus.enemyHeal = playerAction.hpHeal > 0;
         
         // Player attack
-        if(CheckAttack(playerAction.lanesAttack, enemyAction.lanesPosition)){
+        if(CheckAttack(playerAction.lanesAttack, enemyAction.lanesHitbox)){
             battleStatus.enemyHit = true;
             battleStatus.enemyDead = enemyFighter.OnHit(1);
         }
 
         // Enemy attack
-        if(CheckAttack(enemyAction.lanesAttack, playerAction.lanesPosition)){
+        if(CheckAttack(enemyAction.lanesAttack, playerAction.lanesHitbox)){
             battleStatus.playerHit = true;
             battleStatus.playerDead = playerFighter.OnHit(1);
         }

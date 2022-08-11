@@ -9,16 +9,15 @@ public class GameManager : MonoBehaviour
     [Header("Managers")]
     public BattleManager battleManager;
     public AnimationManager animationManager;
+    public UIManager uiManager;
     
     [Header("Scriptable Objects")]
     [SerializeField] private Shapes shapes;
 
-    [Header("Actions UI")]
+    [Header("UI Elements")]
     [SerializeField] private Transform[] actionsBtn;
     private Image[] actionsBtnImage;
     private Action[] actions;
-
-    [SerializeField] private TextMeshProUGUI actionDisplay;
     
     private Action playerChoice;
 
@@ -37,8 +36,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        playerInitialShape = BattleInformation.playerInitialShape;
-        enemyInitialShape = BattleInformation.enemyInitialShape;
+        playerInitialShape = BattleInformation.playerInitialShape ?? playerInitialShape;
+        enemyInitialShape = BattleInformation.enemyInitialShape ?? enemyInitialShape;
 
         actionsBtnImage = new Image[actionsBtn.Length];
         actions = new Action[actionsBtn.Length];
@@ -47,14 +46,14 @@ public class GameManager : MonoBehaviour
             actionsBtn[i].gameObject.SetActive(false);
             actionsBtnImage[i] = actionsBtn[i].GetComponent<Image>();
         }
-
+        
         battleManager.StartBattle(playerInitialShape, enemyInitialShape);
         animationManager.SetInitialShapes(playerInitialShape, enemyInitialShape);
     }
 
     public void EnemyAttack(Action enemyAction)
     {
-        actionDisplay.text = "Enemy will use " + enemyAction.name;
+        uiManager.SetSigns(enemyAction);
     }
 
     public void PlayerButtonPressed(UIActions choice)
@@ -92,6 +91,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(battleStatus);
 
         animationManager.ChangeBattleAnimations(battleStatus);
+        uiManager.UpdateUI(battleStatus);
 
         for(int i = 0; i < actionsBtn.Length; i++){
             actionsBtn[i].gameObject.SetActive(true);
@@ -108,4 +108,6 @@ public class GameManager : MonoBehaviour
         }
         playerChoice = null;
     }
+
+    
 }
