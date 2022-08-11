@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: ac525edfe1c1bdb4fb04f3a1f0a8816e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4509468943990441721
+    second: TsuruSpritesheet_0
+  - first:
+      213: 3473179578216901029
+    second: TsuruSpritesheet_1
+  - first:
+      213: 1067197442777460924
+    second: TsuruSpritesheet_2
+  - first:
+      213: -2848458087466770237
+    second: TsuruSpritesheet_3
+  - first:
+      213: 3703616464147414402
+    second: TsuruSpritesheet_4
+  - first:
+      213: -3645637338227725467
+    second: TsuruSpritesheet_5
+  - first:
+      213: -3036884157375353905
+    second: TsuruSpritesheet_7
+  - first:
+      213: 2518069265029834871
+    second: TsuruSpritesheet_8
+  - first:
+      213: -7160396282277186307
+    second: TsuruSpritesheet_9
+  - first:
+      213: -6132417595164122301
+    second: TsuruSpritesheet_10
+  - first:
+      213: 8021141500204328971
+    second: TsuruSpritesheet_11
+  - first:
+      213: 4458812550681826304
+    second: TsuruSpritesheet_12
+  - first:
+      213: -2657143193347243489
+    second: TsuruSpritesheet_13
+  - first:
+      213: 533539270855830119
+    second: TsuruSpritesheet_14
+  - first:
+      213: 1542893057111311263
+    second: TsuruSpritesheet_15
+  - first:
+      213: -719520038638944483
+    second: TsuruSpritesheet_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TsuruSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1860
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7093bcb33e52b61c0800000000000000
+      internalID: -4509468943990441721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1860
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a962c8bc66333030800000000000000
+      internalID: 3473179578216901029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1860
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0b4f18b627fce00800000000000000
+      internalID: 1067197442777460924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c064f2167e3878d0800000000000000
+      internalID: -2848458087466770237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1240
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d7bc13d83e56330800000000000000
+      internalID: 3703616464147414402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1240
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b29030828186dc0800000000000000
+      internalID: -3645637338227725467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb61afe2f1dad5d0800000000000000
+      internalID: -3036884157375353905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 620
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778aeedb7aaf1f220800000000000000
+      internalID: 2518069265029834871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 620
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df437d7c48921ac90800000000000000
+      internalID: -7160396282277186307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 620
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34323e920b645eaa0800000000000000
+      internalID: -6132417595164122301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 620
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08a2d452b1d05f60800000000000000
+      internalID: 8021141500204328971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 620
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004917b1462e0ed30800000000000000
+      internalID: 4458812550681826304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12c033085eef1bd0800000000000000
+      internalID: -2657143193347243489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a2519d323876700800000000000000
+      internalID: 533539270855830119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 0
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9349839f05796510800000000000000
+      internalID: 1542893057111311263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 0
+        width: 584.6667
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f76284650c306f0800000000000000
+      internalID: -719520038638944483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

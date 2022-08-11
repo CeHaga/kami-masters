@@ -9,7 +9,18 @@ public class HomeScreen : MonoBehaviour
     public GameObject homeMenu;
     public GameObject optionsGamePopUp;
     public GameObject exitGamePopUp;
-    public Button yesExitGame, noExitGame, exitExitGame, confirmOptionsGame, cancelOptionsGame, exitOptionsGame;
+
+    [Header("Buttons")]
+    public Button yesExitGame;
+    public Button noExitGame;
+    public Button exitExitGame;
+    public Button confirmOptionsGame;
+    public Button cancelOptionsGame;
+    public Button exitOptionsGame;
+
+    [Header("First Battle")]
+    public Shape firstPlayerInitialShape;
+    public Shape firstEnemyInitialShape;
 
     private void Awake(){
         confirmOptionsGame.onClick.AddListener(delegate{optionsGame(true);});
@@ -23,7 +34,10 @@ public class HomeScreen : MonoBehaviour
 
     //Start Button Function
     public void startMenu(){
-         SceneManager.LoadScene("SampleScene");
+        BattleInformation.playerInitialShape = firstPlayerInitialShape;
+        BattleInformation.enemyInitialShape = firstEnemyInitialShape;
+
+        SceneManager.LoadScene("Battle");
     }
 
     //Options Button Function

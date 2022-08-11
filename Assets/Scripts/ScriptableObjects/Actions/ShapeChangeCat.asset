@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: ShapeChangeCat
   m_EditorClassIdentifier: 
   name: Neko Change
-  laneAttack: 
-  lanePosition: 0000000001000000
+  lanesAttack: 
+  lanesPosition: 0000000001000000
   hpHeal: 0
+  returnAfter: 0
   shapeChange: {fileID: 11400000, guid: 68daca769f71cda43a19f8d068d0b49c, type: 2}
+  animation: {fileID: 7400000, guid: 86ec8742d7264014aaa4bea4d5101d0a, type: 2}
+  buttonSprite: {fileID: 0}

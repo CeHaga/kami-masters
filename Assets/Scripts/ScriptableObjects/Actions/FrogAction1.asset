@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: FrogAction1
   m_EditorClassIdentifier: 
   name: Tongue Attack
-  laneAttack: 00000000
-  lanePosition: 00000000
+  lanesAttack: 00000000
+  lanesPosition: 00000000
   hpHeal: 0
+  returnAfter: 0
   shapeChange: {fileID: 0}
+  animation: {fileID: 7400000, guid: fc33bfb5993202d43830e772b55334ff, type: 2}
+  buttonSprite: {fileID: -357182398747866879, guid: 55186e9a180e4ad44adaf06694b1c890, type: 3}

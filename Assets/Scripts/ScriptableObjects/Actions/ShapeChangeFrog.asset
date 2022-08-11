@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: ShapeChangeFrog
   m_EditorClassIdentifier: 
   name: Kaeru Change
-  laneAttack: 
-  lanePosition: 00000000
+  lanesAttack: 
+  lanesPosition: 00000000
   hpHeal: 0
+  returnAfter: 0
   shapeChange: {fileID: 11400000, guid: b1ded3f7a2cbcae409d4cd5018589d66, type: 2}
+  animation: {fileID: 7400000, guid: fc33bfb5993202d43830e772b55334ff, type: 2}
+  buttonSprite: {fileID: 0}

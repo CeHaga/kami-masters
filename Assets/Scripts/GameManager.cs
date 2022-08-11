@@ -8,18 +8,23 @@ public class GameManager : MonoBehaviour
 {
     [Header("Managers")]
     public BattleManager battleManager;
+    public AnimationManager animationManager;
     
     [Header("Scriptable Objects")]
-    public Shapes shapes;
+    [SerializeField] private Shapes shapes;
 
-    [Header("Actions in Battle")]
-    public Transform[] actionsBtn;
+    [Header("Actions UI")]
+    [SerializeField] private Transform[] actionsBtn;
+    private Image[] actionsBtnImage;
     private Action[] actions;
-    private Text[] actionsText;
 
-    public TextMeshProUGUI actionDisplay;
+    [SerializeField] private TextMeshProUGUI actionDisplay;
     
     private Action playerChoice;
+
+    [Header("Initial Shapes")]
+    [SerializeField] private Shape playerInitialShape;
+    [SerializeField] private Shape enemyInitialShape;
 
     private void Awake()
     {
@@ -28,13 +33,19 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        actionsText = new Text[actionsBtn.Length];
+        playerInitialShape = BattleInformation.playerInitialShape;
+        enemyInitialShape = BattleInformation.enemyInitialShape;
+
+        actionsBtnImage = new Image[actionsBtn.Length];
         actions = new Action[actionsBtn.Length];
         for(int i = 0; i < actionsBtn.Length; i++)
         {
-            actionsText[i] = actionsBtn[i].GetComponentInChildren<Text>();
             actionsBtn[i].gameObject.SetActive(false);
+            actionsBtnImage[i] = actionsBtn[i].GetComponent<Image>();
         }
+
+        battleManager.StartBattle(playerInitialShape, enemyInitialShape);
+        animationManager.SetInitialShapes(playerInitialShape, enemyInitialShape);
     }
 
     public void EnemyAttack(Action enemyAction)
@@ -76,10 +87,12 @@ public class GameManager : MonoBehaviour
 
         Debug.Log(battleStatus);
 
+        animationManager.ChangeBattleAnimations(battleStatus);
+
         for(int i = 0; i < actionsBtn.Length; i++){
             actionsBtn[i].gameObject.SetActive(true);
             actions[i] = battleManager.GetPlayerShape().actions[i];
-            actionsText[i].text = actions[i].name;
+            actionsBtnImage[i].sprite = actions[i].buttonSprite;
         }
 
         playerChoice = null;

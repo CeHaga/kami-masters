@@ -17,3 +17,7 @@ MonoBehaviour:
   actions:
   - {fileID: 11400000, guid: b929d30234b5a9e4ea3ec242f27297ed, type: 2}
   - {fileID: 11400000, guid: 1caca924c29231045a85a2caad4dcb9d, type: 2}
+  lanesPosition: 01000000
+  idle: {fileID: 7400000, guid: c527f217be94e2445956f95c78e60b96, type: 2}
+  hit: {fileID: 7400000, guid: c527f217be94e2445956f95c78e60b96, type: 2}
+  dead: {fileID: 7400000, guid: c527f217be94e2445956f95c78e60b96, type: 2}

@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: CatAction2
   m_EditorClassIdentifier: 
   name: Lick
-  laneAttack: 
-  lanePosition: 0000000001000000
+  lanesAttack: 
+  lanesPosition: 0000000001000000
   hpHeal: 1
+  returnAfter: 0
   shapeChange: {fileID: 0}
+  animation: {fileID: 7400000, guid: 86ec8742d7264014aaa4bea4d5101d0a, type: 2}
+  buttonSprite: {fileID: 4943699232522283316, guid: 9e9cf2b3f59791440a98b35181d00fd4, type: 3}

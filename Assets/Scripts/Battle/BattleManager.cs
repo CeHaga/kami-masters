@@ -14,13 +14,12 @@ public class BattleManager : MonoBehaviour
     private Action playerAction;
     private Action enemyAction;
 
-    private void Start()
-    {
-        enemyFighter.Create(gameManager.shapes.karp);
+    public void StartBattle(Shape playerInitialShape, Shape enemyInitialShape){
+        enemyFighter.Create(enemyInitialShape);
         enemyAction = enemyFighter.Attack();
         gameManager.EnemyAttack(enemyAction);
 
-        playerFighter.Create(gameManager.shapes.paper);
+        playerFighter.Create(playerInitialShape);
     }
 
     public Action GetPlayerChoice()
@@ -46,13 +45,13 @@ public class BattleManager : MonoBehaviour
         battleStatus.enemyHeal = playerAction.hpHeal > 0;
         
         // Player attack
-        if(CheckAttack(playerAction.laneAttack, enemyAction.lanePosition)){
+        if(CheckAttack(playerAction.lanesAttack, enemyAction.lanesPosition)){
             battleStatus.enemyHit = true;
             battleStatus.enemyDead = enemyFighter.OnHit(1);
         }
 
         // Enemy attack
-        if(CheckAttack(enemyAction.laneAttack, playerAction.lanePosition)){
+        if(CheckAttack(enemyAction.lanesAttack, playerAction.lanesPosition)){
             battleStatus.playerHit = true;
             battleStatus.playerDead = playerFighter.OnHit(1);
         }

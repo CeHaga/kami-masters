@@ -8,4 +8,13 @@ public class Shape : ScriptableObject
     public int maxHP;
     
     public Action[] actions;
+
+    [Header("Lanes")]
+    public Lanes[] lanesPosition;
+
+    [Header("Animations")]
+    public AnimationClip idle;
+    public AnimationClip hit;
+    public AnimationClip dead;
+    public AnimationClip unfold;
 }

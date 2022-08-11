@@ -5,10 +5,16 @@ public class Action : ScriptableObject
 {
     public new string name;
 
-    public Lanes[] laneAttack;
-    public Lanes[] lanePosition;
+    public Lanes[] lanesAttack;
+    public Lanes[] lanesPosition;
 
     public int hpHeal;
 
+    public bool returnAfter;
+
     public Shape shapeChange;
+
+    public AnimationClip animation;
+
+    public Sprite buttonSprite;
 }

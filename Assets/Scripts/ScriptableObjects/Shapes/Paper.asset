@@ -15,3 +15,7 @@ MonoBehaviour:
   name: Kami
   maxHP: 3
   actions: []
+  lanesPosition: 00000000
+  idle: {fileID: 7400000, guid: 96176fd01e8f60f46a45fd7e67c72c87, type: 2}
+  hit: {fileID: 7400000, guid: 96176fd01e8f60f46a45fd7e67c72c87, type: 2}
+  dead: {fileID: 7400000, guid: 96176fd01e8f60f46a45fd7e67c72c87, type: 2}

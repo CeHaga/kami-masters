@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: TsuruAction2
   m_EditorClassIdentifier: 
   name: Fly
-  laneAttack: 
-  lanePosition: 02000000
+  lanesAttack: 
+  lanesPosition: 02000000
   hpHeal: 0
+  returnAfter: 1
   shapeChange: {fileID: 0}
+  animation: {fileID: 7400000, guid: 2b20cc8588232b24989d99508a7c1624, type: 2}
+  buttonSprite: {fileID: 5088915285944266428, guid: 47efa18e5e9ee674bbe8c4b28bf94c25, type: 3}
