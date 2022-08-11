@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Water Jet
   lanesAttack: 0000000002000000
   lanesPosition: 01000000
+  lanesHitbox: 01000000
   hpHeal: 0
   returnAfter: 0
   shapeChange: {fileID: 0}

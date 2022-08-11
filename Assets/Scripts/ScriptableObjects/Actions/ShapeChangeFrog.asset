@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Kaeru Change
   lanesAttack: 
   lanesPosition: 00000000
+  lanesHitbox: 00000000
   hpHeal: 0
   returnAfter: 0
   shapeChange: {fileID: 11400000, guid: b1ded3f7a2cbcae409d4cd5018589d66, type: 2}

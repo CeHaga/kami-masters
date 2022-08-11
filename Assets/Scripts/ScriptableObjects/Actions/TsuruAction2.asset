@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Fly
   lanesAttack: 
   lanesPosition: 02000000
+  lanesHitbox: 02000000
   hpHeal: 0
   returnAfter: 1
   shapeChange: {fileID: 0}

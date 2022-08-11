@@ -21,6 +21,10 @@ public class HomeScreen : MonoBehaviour
     [Header("First Battle")]
     public Shape firstPlayerInitialShape;
     public Shape firstEnemyInitialShape;
+    
+    [Header("Second Battle")]
+    public Shape secondPlayerInitialShape;
+    public Shape secondEnemyInitialShape;
 
     private void Awake(){
         confirmOptionsGame.onClick.AddListener(delegate{optionsGame(true);});
@@ -33,9 +37,17 @@ public class HomeScreen : MonoBehaviour
     }
 
     //Start Button Function
-    public void startMenu(){
+    public void startBattle1(){
         BattleInformation.playerInitialShape = firstPlayerInitialShape;
         BattleInformation.enemyInitialShape = firstEnemyInitialShape;
+
+        SceneManager.LoadScene("Battle");
+    }
+
+    //Start Button Function
+    public void startBattle2(){
+        BattleInformation.playerInitialShape = secondPlayerInitialShape;
+        BattleInformation.enemyInitialShape = secondEnemyInitialShape;
 
         SceneManager.LoadScene("Battle");
     }

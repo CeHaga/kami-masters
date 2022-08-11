@@ -7,6 +7,7 @@ public class Action : ScriptableObject
 
     public Lanes[] lanesAttack;
     public Lanes[] lanesPosition;
+    public Lanes[] lanesHitbox;
 
     public int hpHeal;
 

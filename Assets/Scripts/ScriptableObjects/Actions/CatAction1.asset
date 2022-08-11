@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Scratch
   lanesAttack: 0000000001000000
   lanesPosition: 0000000001000000
+  lanesHitbox: 0000000001000000
   hpHeal: 0
   returnAfter: 0
   shapeChange: {fileID: 0}

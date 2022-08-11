@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a4ede5b9595164bb4407abc8ea8f58, type: 3}
+  m_Name: Bear
+  m_EditorClassIdentifier: 
+  name: Kuma
+  maxHP: 3
+  actions:
+  - {fileID: 11400000, guid: 9d274e2f20ae5184ba418d981db63da4, type: 2}
+  - {fileID: 11400000, guid: 1668ce52d1361144eb83d7108a60b78a, type: 2}
+  lanesPosition: 0000000001000000
+  idle: {fileID: 7400000, guid: b79f16a5545f8cb42981ac13970fc627, type: 2}
+  hit: {fileID: 7400000, guid: b79f16a5545f8cb42981ac13970fc627, type: 2}
+  dead: {fileID: 7400000, guid: b79f16a5545f8cb42981ac13970fc627, type: 2}
+  unfold: {fileID: 7400000, guid: b79f16a5545f8cb42981ac13970fc627, type: 2}

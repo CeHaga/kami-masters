@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Tongue Attack
   lanesAttack: 00000000
   lanesPosition: 00000000
+  lanesHitbox: 00000000
   hpHeal: 0
   returnAfter: 0
   shapeChange: {fileID: 0}

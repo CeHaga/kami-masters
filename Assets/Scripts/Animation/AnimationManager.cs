@@ -60,7 +60,6 @@ public class AnimationManager : MonoBehaviour
     private void SetSize(Transform fighter, Shape shape)
     {
         Vector3 newPosition = GetNewPosition(fighter, shape.lanesPosition);
-        Debug.Log(newPosition);
         
         StartCoroutine(MoveToPosition(fighter, newPosition, transitionTime));
     }

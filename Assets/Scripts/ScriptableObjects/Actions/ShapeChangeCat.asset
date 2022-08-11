@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Neko Change
   lanesAttack: 
   lanesPosition: 0000000001000000
+  lanesHitbox: 0000000001000000
   hpHeal: 0
   returnAfter: 0
   shapeChange: {fileID: 11400000, guid: 68daca769f71cda43a19f8d068d0b49c, type: 2}
