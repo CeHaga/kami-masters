@@ -21,6 +21,9 @@ TextureImporter:
       213: -3645637338227725467
     second: TsuruSpritesheet_5
   - first:
+      213: 6290898476372500934
+    second: TsuruSpritesheet_6
+  - first:
       213: -3036884157375353905
     second: TsuruSpritesheet_7
   - first:
@@ -47,9 +50,6 @@ TextureImporter:
   - first:
       213: 1542893057111311263
     second: TsuruSpritesheet_15
-  - first:
-      213: -719520038638944483
-    second: TsuruSpritesheet_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 341
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -143,9 +143,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1860
-        width: 584.6667
-        height: 620
+        y: 1800.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: TsuruSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 584
-        y: 1860
-        width: 584.6667
-        height: 620
+        x: 600
+        y: 1800.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: TsuruSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 1860
-        width: 584.6667
-        height: 620
+        x: 1200
+        y: 1800.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,9 +206,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1240
-        width: 584.6667
-        height: 620
+        y: 1200.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: TsuruSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 584
-        y: 1240
-        width: 584.6667
-        height: 620
+        x: 600
+        y: 1200.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: TsuruSpritesheet_5
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 1240
-        width: 584.6667
-        height: 620
+        x: 1200
+        y: 1200.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,13 +265,34 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TsuruSpritesheet_7
+      name: TsuruSpritesheet_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 620
-        width: 584.6667
-        height: 620
+        y: 600.75
+        width: 600
+        height: 600.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1aa3a65d2cd4750800000000000000
+      internalID: 6290898476372500934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TsuruSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +310,10 @@ TextureImporter:
       name: TsuruSpritesheet_8
       rect:
         serializedVersion: 2
-        x: 584
-        y: 620
-        width: 584.6667
-        height: 620
+        x: 1200
+        y: 600.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +331,10 @@ TextureImporter:
       name: TsuruSpritesheet_9
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 620
-        width: 584.6667
-        height: 620
+        x: 1800
+        y: 600.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +352,10 @@ TextureImporter:
       name: TsuruSpritesheet_10
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 620
-        width: 584.6667
-        height: 620
+        x: 2400
+        y: 600.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +373,10 @@ TextureImporter:
       name: TsuruSpritesheet_11
       rect:
         serializedVersion: 2
-        x: 2336
-        y: 620
-        width: 584.6667
-        height: 620
+        x: 3000
+        y: 600.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +394,10 @@ TextureImporter:
       name: TsuruSpritesheet_12
       rect:
         serializedVersion: 2
-        x: 2920
-        y: 620
-        width: 584.6667
-        height: 620
+        x: 0
+        y: 0.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +415,10 @@ TextureImporter:
       name: TsuruSpritesheet_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 584.6667
-        height: 620
+        x: 600
+        y: 0.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +436,10 @@ TextureImporter:
       name: TsuruSpritesheet_14
       rect:
         serializedVersion: 2
-        x: 584
-        y: 0
-        width: 584.6667
-        height: 620
+        x: 1200
+        y: 0.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +457,10 @@ TextureImporter:
       name: TsuruSpritesheet_15
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 0
-        width: 584.6667
-        height: 620
+        x: 1800
+        y: 0.75
+        width: 600
+        height: 600.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,27 +470,6 @@ TextureImporter:
       bones: []
       spriteID: f9349839f05796510800000000000000
       internalID: 1542893057111311263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TsuruSpritesheet_16
-      rect:
-        serializedVersion: 2
-        x: 1752
-        y: 0
-        width: 584.6667
-        height: 620
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1f76284650c306f0800000000000000
-      internalID: -719520038638944483
       vertices: []
       indices: 
       edges: []

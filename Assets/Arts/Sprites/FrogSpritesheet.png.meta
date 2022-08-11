@@ -112,7 +112,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 341
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -161,11 +161,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2869.5
-        width: 930.8333
-        height: 956.5
+        y: 2702.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: FrogSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 930
-        y: 2869.5
-        width: 930.8333
-        height: 956.5
+        x: 898
+        y: 2702.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: FrogSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 1860
-        y: 2869.5
-        width: 930.8333
-        height: 956.5
+        x: 1796
+        y: 2702.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: FrogSpritesheet_3
       rect:
         serializedVersion: 2
-        x: 2790
-        y: 2869.5
-        width: 930.8333
-        height: 956.5
+        x: 2694
+        y: 2702.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: FrogSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 3720
-        y: 2869.5
-        width: 930.8333
-        height: 956.5
+        x: 3592
+        y: 2702.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: FrogSpritesheet_5
       rect:
         serializedVersion: 2
-        x: 4650
-        y: 2869.5
-        width: 930.8333
-        height: 956.5
+        x: 4490
+        y: 2702.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,11 +287,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1913.5
-        width: 930.8333
-        height: 956.5
+        y: 1802.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: FrogSpritesheet_7
       rect:
         serializedVersion: 2
-        x: 930
-        y: 1913.5
-        width: 930.8333
-        height: 956.5
+        x: 898
+        y: 1802.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: FrogSpritesheet_8
       rect:
         serializedVersion: 2
-        x: 1860
-        y: 1913.5
-        width: 930.8333
-        height: 956.5
+        x: 1796
+        y: 1802.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: FrogSpritesheet_9
       rect:
         serializedVersion: 2
-        x: 2790
-        y: 1913.5
-        width: 930.8333
-        height: 956.5
+        x: 2694
+        y: 1802.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: FrogSpritesheet_10
       rect:
         serializedVersion: 2
-        x: 3720
-        y: 1913.5
-        width: 930.8333
-        height: 956.5
+        x: 3592
+        y: 1802.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,11 +392,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 957.5
-        width: 930.8333
-        height: 956.5
+        y: 902.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -412,12 +412,12 @@ TextureImporter:
       name: FrogSpritesheet_12
       rect:
         serializedVersion: 2
-        x: 930
-        y: 957.5
-        width: 930.8333
-        height: 956.5
+        x: 898
+        y: 902.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: FrogSpritesheet_13
       rect:
         serializedVersion: 2
-        x: 1860
-        y: 957.5
-        width: 930.8333
-        height: 956.5
+        x: 1796
+        y: 902.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,12 +454,12 @@ TextureImporter:
       name: FrogSpritesheet_14
       rect:
         serializedVersion: 2
-        x: 2790
-        y: 957.5
-        width: 930.8333
-        height: 956.5
+        x: 2694
+        y: 902.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: FrogSpritesheet_15
       rect:
         serializedVersion: 2
-        x: 3720
-        y: 957.5
-        width: 930.8333
-        height: 956.5
+        x: 3592
+        y: 902.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -496,12 +496,12 @@ TextureImporter:
       name: FrogSpritesheet_16
       rect:
         serializedVersion: 2
-        x: 4650
-        y: 957.5
-        width: 930.8333
-        height: 956.5
+        x: 4490
+        y: 902.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,11 +518,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1.5
-        width: 930.8333
-        height: 956.5
+        y: 2.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -538,12 +538,12 @@ TextureImporter:
       name: FrogSpritesheet_18
       rect:
         serializedVersion: 2
-        x: 930
-        y: 1.5
-        width: 930.8333
-        height: 956.5
+        x: 898
+        y: 2.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -559,12 +559,12 @@ TextureImporter:
       name: FrogSpritesheet_19
       rect:
         serializedVersion: 2
-        x: 1860
-        y: 1.5
-        width: 930.8333
-        height: 956.5
+        x: 1796
+        y: 2.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -580,12 +580,12 @@ TextureImporter:
       name: FrogSpritesheet_20
       rect:
         serializedVersion: 2
-        x: 2790
-        y: 1.5
-        width: 930.8333
-        height: 956.5
+        x: 2694
+        y: 2.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -601,12 +601,12 @@ TextureImporter:
       name: FrogSpritesheet_21
       rect:
         serializedVersion: 2
-        x: 3720
-        y: 1.5
-        width: 930.8333
-        height: 956.5
+        x: 3592
+        y: 2.25
+        width: 898.8333
+        height: 900.75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

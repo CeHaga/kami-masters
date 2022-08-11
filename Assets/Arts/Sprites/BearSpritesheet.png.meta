@@ -47,6 +47,12 @@ TextureImporter:
   - first:
       213: -4092007371273443260
     second: BearSpritesheet_14
+  - first:
+      213: -6404445071337802370
+    second: BearSpritesheet_15
+  - first:
+      213: -6403364135601390271
+    second: BearSpritesheet_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,7 +97,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -140,11 +146,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1431.3333
-        width: 693.1429
-        height: 715.6667
+        y: 1202
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +166,12 @@ TextureImporter:
       name: BearSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 693
-        y: 1431.3333
-        width: 693.1429
-        height: 715.6667
+        x: 600
+        y: 1202
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +187,12 @@ TextureImporter:
       name: BearSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 1386
-        y: 1431.3333
-        width: 693.1429
-        height: 715.6667
+        x: 1200
+        y: 1202
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +208,12 @@ TextureImporter:
       name: BearSpritesheet_3
       rect:
         serializedVersion: 2
-        x: 2079
-        y: 1431.3333
-        width: 693.1429
-        height: 715.6667
+        x: 1800
+        y: 1202
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +229,12 @@ TextureImporter:
       name: BearSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 2772
-        y: 1431.3333
-        width: 693.1429
-        height: 715.6667
+        x: 2400
+        y: 1202
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +250,12 @@ TextureImporter:
       name: BearSpritesheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 716.3333
-        width: 693.1429
-        height: 715.6667
+        x: 3000
+        y: 1202
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +271,12 @@ TextureImporter:
       name: BearSpritesheet_6
       rect:
         serializedVersion: 2
-        x: 693
-        y: 716.3333
-        width: 693.1429
-        height: 715.6667
+        x: 0
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +292,12 @@ TextureImporter:
       name: BearSpritesheet_7
       rect:
         serializedVersion: 2
-        x: 1386
-        y: 716.3333
-        width: 693.1429
-        height: 715.6667
+        x: 600
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +313,12 @@ TextureImporter:
       name: BearSpritesheet_8
       rect:
         serializedVersion: 2
-        x: 2079
-        y: 716.3333
-        width: 693.1429
-        height: 715.6667
+        x: 1200
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,12 +334,12 @@ TextureImporter:
       name: BearSpritesheet_9
       rect:
         serializedVersion: 2
-        x: 2772
-        y: 716.3333
-        width: 693.1429
-        height: 715.6667
+        x: 1800
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,12 +355,12 @@ TextureImporter:
       name: BearSpritesheet_10
       rect:
         serializedVersion: 2
-        x: 3465
-        y: 716.3333
-        width: 693.1429
-        height: 715.6667
+        x: 2400
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,12 +376,12 @@ TextureImporter:
       name: BearSpritesheet_11
       rect:
         serializedVersion: 2
-        x: 4158
-        y: 716.3333
-        width: 693.1429
-        height: 715.6667
+        x: 3000
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,12 +397,12 @@ TextureImporter:
       name: BearSpritesheet_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1.333313
-        width: 693.1429
-        height: 715.6667
+        x: 3600
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -412,12 +418,12 @@ TextureImporter:
       name: BearSpritesheet_13
       rect:
         serializedVersion: 2
-        x: 693
-        y: 1.333313
-        width: 693.1429
-        height: 715.6667
+        x: 4200
+        y: 601
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,12 +439,12 @@ TextureImporter:
       name: BearSpritesheet_14
       rect:
         serializedVersion: 2
-        x: 1386
-        y: 1.333313
-        width: 693.1429
-        height: 715.6667
+        x: 0
+        y: 0
+        width: 600.375
+        height: 601
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,6 +452,48 @@ TextureImporter:
       bones: []
       spriteID: 44867f8e9f44637c0800000000000000
       internalID: -4092007371273443260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BearSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600.375
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75b86bc327de17a0800000000000000
+      internalID: -6404445071337802370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BearSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600.375
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14db002ce3ea227a0800000000000000
+      internalID: -6403364135601390271
       vertices: []
       indices: 
       edges: []

@@ -88,7 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 341
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,11 +137,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2873.25
-        width: 929
-        height: 957.75
+        y: 1799.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,12 +157,12 @@ TextureImporter:
       name: KarpSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 929
-        y: 2873.25
-        width: 929
-        height: 957.75
+        x: 900
+        y: 1799.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: KarpSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 2873.25
-        width: 929
-        height: 957.75
+        x: 1800
+        y: 1799.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: KarpSpritesheet_3
       rect:
         serializedVersion: 2
-        x: 2787
-        y: 2873.25
-        width: 929
-        height: 957.75
+        x: 2700
+        y: 1799.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: KarpSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 3716
-        y: 2873.25
-        width: 929
-        height: 957.75
+        x: 3600
+        y: 1799.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: KarpSpritesheet_5
       rect:
         serializedVersion: 2
-        x: 4645
-        y: 2873.25
-        width: 929
-        height: 957.75
+        x: 4500
+        y: 1799.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,11 +263,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1916.25
-        width: 929
-        height: 957.75
+        y: 900.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: KarpSpritesheet_7
       rect:
         serializedVersion: 2
-        x: 929
-        y: 1916.25
-        width: 929
-        height: 957.75
+        x: 900
+        y: 900.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: KarpSpritesheet_8
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 1916.25
-        width: 929
-        height: 957.75
+        x: 1800
+        y: 900.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,12 +325,12 @@ TextureImporter:
       name: KarpSpritesheet_9
       rect:
         serializedVersion: 2
-        x: 2787
-        y: 1916.25
-        width: 929
-        height: 957.75
+        x: 2700
+        y: 900.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: KarpSpritesheet_10
       rect:
         serializedVersion: 2
-        x: 3716
-        y: 1916.25
-        width: 929
-        height: 957.75
+        x: 3600
+        y: 900.3333
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,11 +368,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 959.25
-        width: 929
-        height: 957.75
+        y: 1.333313
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,12 +388,12 @@ TextureImporter:
       name: KarpSpritesheet_12
       rect:
         serializedVersion: 2
-        x: 929
-        y: 959.25
-        width: 929
-        height: 957.75
+        x: 900
+        y: 1.333313
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: KarpSpritesheet_13
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 959.25
-        width: 929
-        height: 957.75
+        x: 1800
+        y: 1.333313
+        width: 900.8333
+        height: 899.6667
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
