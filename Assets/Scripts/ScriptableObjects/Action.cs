@@ -4,6 +4,7 @@ using UnityEngine;
 public class Action : ScriptableObject
 {
     public new string name;
+    public string description;
 
     public Lanes[] lanesAttack;
     public Lanes[] lanesPosition;

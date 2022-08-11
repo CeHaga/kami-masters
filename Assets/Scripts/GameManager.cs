@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public BattleManager battleManager;
     public AnimationManager animationManager;
     public UIManager uiManager;
+    private SoundManager soundManager;
     
     [Header("Scriptable Objects")]
     [SerializeField] private Shapes shapes;
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
         playerInitialShape = BattleInformation.playerInitialShape ?? playerInitialShape;
         enemyInitialShape = BattleInformation.enemyInitialShape ?? enemyInitialShape;
 
+        //BattleInformation.soundManager.Play(BattleInformation.clip);
+
         actionsBtnImage = new Image[actionsBtn.Length];
         actions = new Action[actionsBtn.Length];
         for(int i = 0; i < actionsBtn.Length; i++)
@@ -53,7 +56,7 @@ public class GameManager : MonoBehaviour
 
     public void EnemyAttack(Action enemyAction)
     {
-        uiManager.SetSigns(enemyAction);
+        uiManager.EnemyAttack(enemyAction);
     }
 
     public void PlayerButtonPressed(UIActions choice)

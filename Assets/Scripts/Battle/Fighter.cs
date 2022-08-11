@@ -74,4 +74,9 @@ public abstract class Fighter : MonoBehaviour
     {
         return hp;
     }
+
+    public int GetCooldown()
+    {
+        return cooldown;
+    }
 }

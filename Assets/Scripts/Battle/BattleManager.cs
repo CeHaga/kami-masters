@@ -65,6 +65,8 @@ public class BattleManager : MonoBehaviour
         battleStatus.enemyHP = enemyFighter.GetHP();
         battleStatus.enemyAction = enemyAction;
 
+        battleStatus.playerShapeChangeCooldown = playerFighter.GetCooldown();
+
         enemyAction = enemyFighter.Attack();
         gameManager.EnemyAttack(enemyAction);
 

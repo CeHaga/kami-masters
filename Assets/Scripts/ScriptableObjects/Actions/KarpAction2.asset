@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: KarpAction2
   m_EditorClassIdentifier: 
   name: Water Jet
+  description: 'carpa habilidade 2: O INIMIGO VAI ATACAR EM BAIXO E CIMA'
   lanesAttack: 0000000002000000
   lanesPosition: 01000000
   lanesHitbox: 01000000
   hpHeal: 0
   returnAfter: 0
   shapeChange: {fileID: 0}
-  animation: {fileID: 7400000, guid: c527f217be94e2445956f95c78e60b96, type: 2}
+  animation: {fileID: 7400000, guid: ffbc4ee162d9db646a75d9b14cb91a16, type: 2}
   buttonSprite: {fileID: 0}

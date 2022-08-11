@@ -9,6 +9,7 @@ public class BattleStatus
     public bool playerHeal;
     public bool playerHit;
     public bool playerDead;
+    public int playerShapeChangeCooldown;
 
     public Shape enemyShape;
     public int enemyMaxHP;

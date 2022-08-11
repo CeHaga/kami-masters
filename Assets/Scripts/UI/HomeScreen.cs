@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class HomeScreen : MonoBehaviour
 {
+    [Header("Managers")]
+    public SoundManager soundManager;
+
+    [Header("Popups")]
     public GameObject homeMenu;
     public GameObject optionsGamePopUp;
     public GameObject exitGamePopUp;
@@ -17,6 +21,9 @@ public class HomeScreen : MonoBehaviour
     public Button confirmOptionsGame;
     public Button cancelOptionsGame;
     public Button exitOptionsGame;
+
+    [Header("Menu Music")]
+    public AudioClip menuMusic;
     
     private void Awake(){
         confirmOptionsGame.onClick.AddListener(delegate{optionsGame(true);});
@@ -27,7 +34,13 @@ public class HomeScreen : MonoBehaviour
         noExitGame.onClick.AddListener(delegate{exitGame(false);});
         exitExitGame.onClick.AddListener(delegate{exitGame(false);});
     }
-
+/*
+    private void Start()
+    {
+        BattleInformation.soundManager = soundManager;
+        soundManager.Play(menuMusic);
+    }
+*/
     //Start Button Function
     public void startMenu(){
         SceneManager.LoadScene("ChoosePhase");

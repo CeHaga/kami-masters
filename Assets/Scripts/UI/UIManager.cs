@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class UIManager : MonoBehaviour
     [Header("Signs")]
     [SerializeField] private GameObject[] warningSigns;
     [SerializeField] private GameObject[] placeSigns;
+
+    [Header("Texts")]
+    [SerializeField] private TextMeshProUGUI actionDisplay;
+    [SerializeField] private GameObject cooldownContainer;
+    [SerializeField] private TextMeshProUGUI cooldownDisplay;
 
     private void Awake()
     {
@@ -52,38 +58,61 @@ public class UIManager : MonoBehaviour
         gameManager.ConfirmPlayerChoice();
     }
 
-    public void UpdateUI(BattleStatus battleStatus){
+    public void UpdateUI(BattleStatus battleStatus)
+    {
         SetHealth(playerHearts, battleStatus.playerHP);
         SetHealth(enemyHearts, battleStatus.enemyHP);
+
+        SetCooldown(battleStatus.playerShapeChangeCooldown);
     }
 
-    private void SetHealth(SpriteRenderer[] hearts, int hp){
-        Debug.Log(hp);
-        for(int i = 0; i < hp; i++){
+    private void SetHealth(SpriteRenderer[] hearts, int hp)
+    {
+        for(int i = 0; i < hp; i++)
+        {
             hearts[i].sprite = fullHeart;
         }
-        for(int i = hp; i < hearts.Length; i++){
+        for(int i = hp; i < hearts.Length; i++)
+        {
             hearts[i].sprite = emptyHeart;
         }
     }
 
-    public void SetSigns(Action enemyAction){
-        ResetSigns();
+    private void SetCooldown(int cooldown)
+    {
+        cooldownDisplay.text = cooldown.ToString();
+        cooldownContainer.SetActive(cooldown != 0);
+    }
 
-        foreach(Lanes lane in enemyAction.lanesAttack){
+    private void SetActionText(Action enemyAction)
+    {
+        actionDisplay.text = enemyAction.description;
+    }
+
+    public void EnemyAttack(Action enemyAction)
+    {
+        SetActionText(enemyAction);
+
+        ResetSigns();
+        foreach(Lanes lane in enemyAction.lanesAttack)
+        {
             warningSigns[(int)lane].SetActive(true);
         }
         
-        foreach(Lanes lane in enemyAction.lanesHitbox){
+        foreach(Lanes lane in enemyAction.lanesHitbox)
+        {
             placeSigns[(int)lane].SetActive(true);
         }
     }
 
-    private void ResetSigns(){
-        foreach(GameObject sign in warningSigns){
+    private void ResetSigns()
+    {
+        foreach(GameObject sign in warningSigns)
+        {
             sign.SetActive(false);
         }
-        foreach(GameObject sign in placeSigns){
+        foreach(GameObject sign in placeSigns)
+        {
             sign.SetActive(false);
         }
     }

@@ -19,5 +19,5 @@ MonoBehaviour:
   hpHeal: 0
   returnAfter: 0
   shapeChange: {fileID: 11400000, guid: 68daca769f71cda43a19f8d068d0b49c, type: 2}
-  animation: {fileID: 7400000, guid: 86ec8742d7264014aaa4bea4d5101d0a, type: 2}
+  animation: {fileID: 7400000, guid: a6ef03878b869ec47aa6a854428d7e7d, type: 2}
   buttonSprite: {fileID: 0}
