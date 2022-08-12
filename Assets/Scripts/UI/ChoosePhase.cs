@@ -9,17 +9,20 @@ public class ChoosePhase : MonoBehaviour
     public Shape firstPlayerInitialShape;
     public Shape firstEnemyInitialShape;
     public AudioClip firstClip;
+    public Sprite firstBackground;
 
     [Header("Second Battle")]
     public Shape secondPlayerInitialShape;
     public Shape secondEnemyInitialShape;
     public AudioClip secondClip;
+    public Sprite secondBackground;
 
     public void BearBattle()
     {
         BattleInformation.playerInitialShape = firstPlayerInitialShape;
         BattleInformation.enemyInitialShape = firstEnemyInitialShape;
         BattleInformation.clip = firstClip;
+        BattleInformation.background = firstBackground;
 
         SceneManager.LoadScene("Battle");
     }
@@ -28,6 +31,7 @@ public class ChoosePhase : MonoBehaviour
         BattleInformation.playerInitialShape = secondPlayerInitialShape;
         BattleInformation.enemyInitialShape = secondEnemyInitialShape;
         BattleInformation.clip = secondClip;
+        BattleInformation.background = secondBackground;
 
         SceneManager.LoadScene("Battle");
     }

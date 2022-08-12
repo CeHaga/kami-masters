@@ -23,9 +23,17 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject cooldownContainer;
     [SerializeField] private Text cooldownDisplay;
 
+    [Header("Images")]
+    [SerializeField] private SpriteRenderer background;
+
     private void Awake()
     {
         ResetSigns();    
+    }
+
+    public void SetBackground(Sprite image)
+    {
+        background.sprite = image;
     }
     
     public void ChangeTsuruPress()

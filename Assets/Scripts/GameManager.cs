@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public BattleManager battleManager;
     public AnimationManager animationManager;
     public UIManager uiManager;
-    private SoundManager soundManager;
+    public SoundManager soundManager;
     
     [Header("Scriptable Objects")]
     [SerializeField] private Shapes shapes;
@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject victory;
     [SerializeField] private GameObject defeat;
 
+    public Sprite background;
+
     private void Awake()
     {
         playerChoice = null;
@@ -39,8 +41,10 @@ public class GameManager : MonoBehaviour
     {
         playerInitialShape = BattleInformation.playerInitialShape ?? playerInitialShape;
         enemyInitialShape = BattleInformation.enemyInitialShape ?? enemyInitialShape;
+        
+        soundManager.Play(BattleInformation.clip);
 
-        //BattleInformation.soundManager.Play(BattleInformation.clip);
+        uiManager.SetBackground(BattleInformation.background ?? background);
 
         actionsBtnImage = new Image[actionsBtn.Length];
         actions = new Action[actionsBtn.Length];

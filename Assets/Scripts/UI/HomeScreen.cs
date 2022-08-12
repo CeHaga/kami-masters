@@ -34,13 +34,12 @@ public class HomeScreen : MonoBehaviour
         noExitGame.onClick.AddListener(delegate{exitGame(false);});
         exitExitGame.onClick.AddListener(delegate{exitGame(false);});
     }
-/*
+
     private void Start()
     {
-        BattleInformation.soundManager = soundManager;
         soundManager.Play(menuMusic);
     }
-*/
+
     //Start Button Function
     public void startMenu(){
         SceneManager.LoadScene("ChoosePhase");

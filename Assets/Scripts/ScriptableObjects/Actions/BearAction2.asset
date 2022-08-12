@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BearAction2
   m_EditorClassIdentifier: 
   name: 
-  description: O INIMIGO VAI DEFENDER EM BAIXO E MEIO
+  description: O INIMIGO VAI DEFENDER EM MEIO E CIMA
   lanesAttack: 
   lanesPosition: 0000000001000000
   lanesHitbox: 00000000
